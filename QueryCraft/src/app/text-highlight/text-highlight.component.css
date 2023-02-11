@@ -3,3 +3,20 @@ div {
     width: fit-content;
     display: inline;
 }
+
+::ng-deep .tooltip-inner {
+    width: fit-content;
+    background-color: hsla(0, 0%, 100%, 0.9);
+    animation-name: delayedFadeIn;
+    animation-duration: 0.5s;
+}
+
+@keyframes delayedFadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

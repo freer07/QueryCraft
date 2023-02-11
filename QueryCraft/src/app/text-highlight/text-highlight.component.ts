@@ -1,5 +1,5 @@
 import { trigger, state, style, transition, animate } from '@angular/animations';
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ViewChild } from '@angular/core';
 import { HostListener } from '@angular/core';
 
 @Component({
@@ -27,8 +27,12 @@ export class TextHighlightComponent implements OnInit {
   @Input()
   color: string
 
+  @Input()
+  hover: string
+
   constructor() {
     this.color = 'black'
+    this.hover = ''
   }
 
   ngOnInit (): void {
@@ -39,5 +43,4 @@ export class TextHighlightComponent implements OnInit {
   keyEvent (event: any) {
     this.hl = true;
   }
-
 }
