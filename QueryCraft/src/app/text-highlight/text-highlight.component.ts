@@ -31,7 +31,7 @@ export class TextHighlightComponent implements OnInit {
   hover: string
 
   constructor() {
-    this.color = 'black'
+    this.color = ''
     this.hover = ''
   }
 
