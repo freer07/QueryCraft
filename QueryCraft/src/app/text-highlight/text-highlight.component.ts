@@ -1,5 +1,5 @@
 import { trigger, state, style, transition, animate } from '@angular/animations';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { HostListener } from '@angular/core';
 
 @Component({
@@ -12,7 +12,7 @@ import { HostListener } from '@angular/core';
         style({ backgroundColor: 'transparent' })
       ),
       state('true',
-        style({ backgroundColor: 'orange' })
+        style({ backgroundColor: '{{color}}' }), { params: { color: 'black' } }
       ),
       transition('false => true', [
         animate('1s')
@@ -24,18 +24,20 @@ import { HostListener } from '@angular/core';
 export class TextHighlightComponent implements OnInit {
   hl = false
 
-  constructor() { }
+  @Input()
+  color: string
+
+  constructor() {
+    this.color = 'black'
+  }
 
   ngOnInit (): void {
 
   }
 
-  @HostListener('document:keypress', ['$event'])
+  @HostListener('document:click', ['$event'])
   keyEvent (event: any) {
-    console.log("here!!");
-    if (event.keyCode == 13) {//enter
-      this.hl = true;
-    }
+    this.hl = true;
   }
 
 }
