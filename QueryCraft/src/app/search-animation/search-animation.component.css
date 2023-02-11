@@ -1,4 +1,4 @@
-.typer-container {
+.container {
     display: inline-block;
     font-family: "arial";
     font-size: 1.5em;
@@ -13,7 +13,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .typer-container {
+    .container {
         font-size: 1em;
     }
 }
