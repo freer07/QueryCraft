@@ -1,0 +1,15 @@
+div {
+    background-color: transparent;
+    width: fit-content;
+    display: inline;
+}
+
+/* @keyframes highlight {
+    from {
+        background-color: transparent;
+    }
+
+    to {
+        background-color: orange;
+    }
+} */

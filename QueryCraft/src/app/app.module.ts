@@ -7,18 +7,22 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { SearchAnimationComponent } from './search-animation/search-animation.component';
 import { TutorialsComponent } from './tutorials/tutorials.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { TextHighlightComponent } from './text-highlight/text-highlight.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomepageComponent,
     SearchAnimationComponent,
-    TutorialsComponent
+    TutorialsComponent,
+    TextHighlightComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
