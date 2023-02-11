@@ -28,3 +28,17 @@ img.center {
     margin-right: auto;
     width: 50%;
 }
+
+@media only screen and (max-width: 600px) {
+    .icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    img.center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+}

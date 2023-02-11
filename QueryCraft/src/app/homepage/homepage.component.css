@@ -1,3 +1,24 @@
 .search-bar {
-    background-color: orange;
+    background-color: white;
+    border-radius: 30px;
+    width: fit-content;
+    padding: 12px 22px 12px 12px;
+    margin-top: 2.5%;
+}
+
+.component-div {
+    margin-top: 7%;
+}
+
+/*
+    On Mobile
+*/
+@media only screen and (max-width: 600px) {
+    .component-div {
+        margin-top: 15%;
+    }
+
+    .search-bar {
+        margin-top: 5%;
+    }
 }
