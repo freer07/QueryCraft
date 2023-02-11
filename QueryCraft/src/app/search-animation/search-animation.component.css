@@ -4,6 +4,14 @@
     font-size: 1.5em;
 }
 
+.search-bar {
+    background-color: white;
+    border-radius: 30px;
+    width: fit-content;
+    padding: 12px 22px 12px 12px;
+    margin-top: 2.5%;
+}
+
 @media only screen and (max-width: 600px) {
     .typer-container {
         font-size: 1em;

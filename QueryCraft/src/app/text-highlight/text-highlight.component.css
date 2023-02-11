@@ -1,0 +1,26 @@
+div {
+    background-color: transparent;
+    width: fit-content;
+    display: inline;
+    border-radius: 5px;
+    /* padding: 2px; */
+}
+
+::ng-deep .tooltip-inner {
+    border-radius: 5px;
+    padding: 2px;
+    width: fit-content;
+    background-color: hsla(0, 0%, 100%, 0.9);
+    animation-name: delayedFadeIn;
+    animation-duration: 0.5s;
+}
+
+@keyframes delayedFadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
