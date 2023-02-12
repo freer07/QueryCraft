@@ -1,11 +1,10 @@
 import { trigger, state, style, transition, animate } from '@angular/animations';
 import { Component, OnInit, Input } from '@angular/core';
-import { HostListener } from '@angular/core';
 
 @Component({
-  selector: 'app-text-highlight',
-  templateUrl: './text-highlight.component.html',
-  styleUrls: ['./text-highlight.component.css'],
+  selector: 'app-text-highlight-click',
+  templateUrl: './text-highlight-click.component.html',
+  styleUrls: ['./text-highlight-click.component.css'],
   animations: [
     trigger('hlBox', [
       state('false',
@@ -21,7 +20,7 @@ import { HostListener } from '@angular/core';
 
   ]
 })
-export class TextHighlightComponent implements OnInit {
+export class TextHighlightClickComponent implements OnInit {
   hl = false
 
   @Input()
@@ -29,18 +28,17 @@ export class TextHighlightComponent implements OnInit {
 
   @Input()
   hover: string
-
   constructor() {
     this.color = ''
     this.hover = ''
   }
 
   ngOnInit (): void {
-
   }
 
-  @HostListener('document:click', ['$event'])
-  keyEvent (event: any) {
+  onClick () {
+    console.log("asdf")
     this.hl = true;
   }
+
 }

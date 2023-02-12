@@ -9,6 +9,7 @@ import { TutorialsComponent } from './tutorials/tutorials.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TextHighlightComponent } from './text-highlight/text-highlight.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TextHighlightClickComponent } from './text-highlight-click/text-highlight-click.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HomepageComponent,
     SearchAnimationComponent,
     TutorialsComponent,
-    TextHighlightComponent
+    TextHighlightComponent,
+    TextHighlightClickComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,4 @@
+<div [@hlBox]="{value: hl, params: {color: color}}" [ngbTooltip]="hl ? hover : ''" [animation]="true"
+    (click)="onClick()">
+    <ng-content></ng-content>
+</div>
