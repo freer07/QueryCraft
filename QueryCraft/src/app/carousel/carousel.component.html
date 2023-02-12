@@ -1,5 +1,9 @@
 <div class="carousel">
-    <div class="slide" *ngIf="0==currentSlide" style="top:30%;">
+    <div class="slide" *ngIf="0==currentSlide">
+        <app-search-animation>How do I improve my search results?</app-search-animation>
+    </div>
+
+    <div class="slide" *ngIf="1==currentSlide">
         <h2 class="center" style="color:white; width: fit-content;">Here's an Example</h2>
         <app-search-animation style="margin-top: 50%;">How do I <app-text-highlight [color]="'lightblue'"
                 [hover]="'vocab-replace words'">get
@@ -8,7 +12,7 @@
         <h4 class="center prompt">See the keywords?</h4>
     </div>
 
-    <div class="slide" *ngIf="1==currentSlide" style="top:30%;">
+    <div class="slide" *ngIf="2==currentSlide">
         <h2 class="center" style="color:white; width: fit-content;">Try Finding Them!</h2>
         <app-search-animation [skipTypieType]="true">How do I <app-text-highlight-click [color]="'lightblue'"
                 [hover]="'vocab-replace words'">get
@@ -17,7 +21,7 @@
                 airport</app-text-highlight-click>?</app-search-animation>
     </div>
 
-    <div class="slide" *ngIf="2==currentSlide" style="top:30%;">
+    <div class="slide" *ngIf="3==currentSlide">
         <h2 class="center" style="color:white; width: fit-content;">Check your own query!</h2>
         <app-query-rank></app-query-rank>
     </div>

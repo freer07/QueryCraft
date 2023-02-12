@@ -8,7 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class CarouselComponent implements OnInit {
 
   currentSlide = 0;
-  slides = 3;
+  slides = 4;
 
   constructor() {
   }
