@@ -7,7 +7,7 @@ export class apiManager {
                 prediction: string
             }
     */
-    async analyse (sentence: string) {
+    analyse (sentence: string): Promise<Response> {
         var requestOptions: RequestInit = {
             method: 'POST',
             redirect: 'follow',
@@ -20,15 +20,6 @@ export class apiManager {
             sentence: sentence
         });
 
-        fetch("https://joeljacob.pythonanywhere.com/userinput?" + params, requestOptions)
-            .then(response => {
-                return response.json();
-            }).then(data => {
-                console.log(data)
-                return data
-            }).catch(error => {
-                console.log('error', error)
-            }).finally(() => {
-            });
+        return fetch("https://joeljacob.pythonanywhere.com/userinput?" + params, requestOptions)
     }
 }

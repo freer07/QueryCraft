@@ -1,0 +1,11 @@
+<div class="center search-bar">
+    <div style="float:left">
+        <img class="icon" src="assets/magnifying-glass-solid.svg" width="30px" height="30px"
+            style="padding-right: 10px;">
+    </div>
+
+    <input class="container" autofocus (keyup.enter)="submit($event)">
+</div>
+
+<h2 class="center" [ngStyle]="{'color': rgb, 'width':'fit-content', 'display': resultText == '' ? 'none' : ''}"
+    [textContent]="resultText == 'good' ? 'Good Job!' : 'Try Again'"></h2>
