@@ -1,9 +1,23 @@
 div {
-    background-color: transparent;
     width: fit-content;
     display: inline;
     border-radius: 5px;
+    animation-name: delayedBackground;
+    animation-duration: 8s;
     /* padding: 2px; */
+}
+
+@keyframes delayedBackground {
+    0% {
+        background-color: transparent;
+    }
+
+    50% {
+        background-color: transparent;
+    }
+
+
+    100% {}
 }
 
 ::ng-deep .tooltip-inner {
