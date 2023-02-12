@@ -12,13 +12,14 @@
         <div *ngIf= "i === currentSlide" class = "slide">
             <div class = "prompt-wrapper">
                 <app-search-animation>
-                    How do I <app-text-highlight [color]="'lightblue'" [hover]="'vocab-replace words'">get
-                    to</app-text-highlight>&nbsp;<app-text-highlight [color]="'orange'" [hover]="'keywords'">Toronto
-                    airport</app-text-highlight>?
+                    {{slide.intro_text}}<app-text-highlight [color]="'lightblue'" [hover]="'vocab-replace words'">{{slide.vocab_text}}
+                </app-text-highlight>&nbsp;<app-text-highlight [color]="'orange'" [hover]="'keywords'">{{slide.keyword_text}}
+                    {{slide.exit_text}}</app-text-highlight>
                 </app-search-animation>
                 <h4 class="center prompt">Click anywhere to continue...</h4>
             </div>
         </div>
+
     </ng-container>
 
     <!-- controls -->

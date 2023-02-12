@@ -7,11 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TutorialsComponent implements OnInit {
   // content for the tutorial, in the order we want to display it 
+  // this only works for a specific form of query -- which ... sucks but it does give us two different queries? 
   public slides = [ 
-    {intro_text: "some text to introduce a thing", 
-     another_attr: "some more text or something"}, 
-     {intro_text: "some text to introduce a different thing than before", 
-     another_attr: "this is something else, but it is also text"}
+    {intro_text: "How do I ", 
+     vocab_text: "get to", 
+     keyword_text: "Toronto airport",
+     exit_text: "?"}, 
+     {intro_text: "How do I find ", 
+     vocab_text: "someone to fix my car ", 
+     keyword_text: "nearby",
+     exit_text: "?"}
   ]
   constructor() { }
 
