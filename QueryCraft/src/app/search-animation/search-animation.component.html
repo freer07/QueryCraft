@@ -4,6 +4,6 @@
             style="padding-right: 10px;">
     </div>
     <div class="container">
-        <div class="typed"><ng-content></ng-content></div>
+        <div [className]="skipTypieType ? 'no-typietype' : 'typed'"><ng-content></ng-content></div>
     </div>
 </div>

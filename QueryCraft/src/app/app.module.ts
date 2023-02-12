@@ -11,6 +11,7 @@ import { TextHighlightComponent } from './text-highlight/text-highlight.componen
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TextHighlightClickComponent } from './text-highlight-click/text-highlight-click.component';
 import { CarouselComponent } from './carousel/carousel.component';
+import { QueryRankComponent } from './query-rank/query-rank.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CarouselComponent } from './carousel/carousel.component';
     TutorialsComponent,
     TextHighlightComponent,
     TextHighlightClickComponent,
-    CarouselComponent
+    CarouselComponent,
+    QueryRankComponent
   ],
   imports: [
     BrowserModule,
