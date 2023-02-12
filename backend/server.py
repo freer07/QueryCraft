@@ -27,8 +27,9 @@ examples=[
 
 
 
-@app.route('/userinput', methods=['GET'])
+@app.route('/userinput', methods=['POST'])
 def queryBuild():
+    sentence = request.args.get('sentence')
     co = cohere.Client('')
 
     #response = co.generate(
@@ -37,10 +38,15 @@ def queryBuild():
 
     response = co.classify(
     model='large',
-    inputs=["this is a test"],
+    inputs=[sentence],
     examples=examples
     )
-    return response.classifications
+    print('The confidence levels of the labels are: {}'.format(response.classifications))
+    resObj = {
+      'prediction': response.classifications[0].prediction,
+      'confidence': response.classifications[0].confidence
+    }
+    return resObj
 
 
 @app.route('/')
