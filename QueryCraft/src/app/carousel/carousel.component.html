@@ -1,0 +1,31 @@
+<!-- <p>carousel works!</p> -->
+<!-- carousel -->
+<div class="carousel">
+    <!-- <ng-container *ngFor="let slide of slides; let i = 0"> 
+        <img
+            *ngIf="i === currentSlide"
+            [src] = "slide.src"
+            class = "slide"
+        />
+    </ng-container> -->
+    <ng-container *ngFor = "let slide of slides; let i = index">
+        <div *ngIf= "i === currentSlide" class = "slide">
+            <div class = "prompt-wrapper">
+                <app-search-animation>
+                    How do I <app-text-highlight [color]="'lightblue'" [hover]="'vocab-replace words'">get
+                    to</app-text-highlight>&nbsp;<app-text-highlight [color]="'orange'" [hover]="'keywords'">Toronto
+                    airport</app-text-highlight>?
+                </app-search-animation>
+                <h4 class="center prompt">Click anywhere to continue...</h4>
+            </div>
+        </div>
+    </ng-container>
+
+    <!-- controls -->
+    <button class = "control prev" (click) = "onPreviousClick()">
+        <span class = "arrow left"></span>
+    </button>
+    <button class = "control next" (click) = "onNextClick()">
+        <span class = "arrow right"></span>
+    </button>
+</div>

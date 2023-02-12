@@ -1,9 +1,15 @@
-.prompt {
-    width: fit-content;
-    color: rgba(255, 255, 255, 0.0);
-    margin-top: 1%;
-    animation: show 1s linear 4s 1 normal forwards;
-}
+
+/*to hold the carousel*/
+.container {
+    margin: 0 auto;
+    margin-top: 5%;
+    display: block;
+    height: 75%;
+    width: 90%;
+    max-width: 1200px;
+    max-height: 600px;
+    padding: 2em;
+  }
 
 @keyframes show {
     0% {

@@ -10,6 +10,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TextHighlightComponent } from './text-highlight/text-highlight.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TextHighlightClickComponent } from './text-highlight-click/text-highlight-click.component';
+import { CarouselComponent } from './carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { TextHighlightClickComponent } from './text-highlight-click/text-highlig
     SearchAnimationComponent,
     TutorialsComponent,
     TextHighlightComponent,
-    TextHighlightClickComponent
+    TextHighlightClickComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
